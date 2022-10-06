@@ -64,7 +64,12 @@ const state = {
     'CatppuccinMochaSky',
     'CatppuccinMochaSapphire',
     'CatppuccinMochaBlue',
-    'CatppuccinMochaLavender'
+    'CatppuccinMochaLavender',
+    'DavysGray',
+    'DarkGray',
+    'BattleshipGray',
+    'Gray',
+    'DimGray'
 
   ],
   colorValues: [
@@ -104,7 +109,12 @@ const state = {
     '#89DCEB',
     '#74C7EC',
     '#89B4FA',
-    '#B4BEFE'
+    '#B4BEFE',
+    '#555555',
+    '#A9A9A9',
+    '#848482',
+    '#808080',
+    '#696969'
   ],
   externalPlayerNames: [],
   externalPlayerNameTranslationKeys: [],
