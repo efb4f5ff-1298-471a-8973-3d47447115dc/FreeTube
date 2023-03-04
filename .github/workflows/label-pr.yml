@@ -1,16 +1,31 @@
 name: "Pull Request Labeler"
+
 on:
   pull_request_target:
     types: [opened, reopened, ready_for_review]
+  pull_request_review:
+    types: [submitted]
 
 jobs:
-  triage:
+  label-waiting-for-review-and-dependencies:
     permissions:
       contents: read
       pull-requests: write
     runs-on: ubuntu-latest
     if: ${{ !github.event.pull_request.draft }}
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  label-changes-requested:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    if: ${{ github.event.review.state == 'changes_requested' }}
+    steps:
+      - uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/changes-requested-labeler.yml
