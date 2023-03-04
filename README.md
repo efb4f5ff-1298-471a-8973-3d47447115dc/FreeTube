@@ -3,7 +3,7 @@
 </p>
 
 FreeTube is an open source desktop YouTube player built with privacy in mind.
-Use YouTube without advertisements and prevent Google from tracking you with their cookies and JavaScript.
+Use YouvTube without advertisements and prevent Google from tracking you with their cookies and JavaScript.
 Available for Windows, Mac & Linux thanks to Electron.
 
 <p align="center"><a href="https://github.com/FreeTubeApp/FreeTube/releases">Download FreeTube</a></p>
