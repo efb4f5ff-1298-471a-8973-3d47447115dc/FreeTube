@@ -13,7 +13,7 @@ Available for Windows, Mac & Linux thanks to Electron.
   </a>
   <a href="https://hosted.weblate.org/engage/free-tube/">
     <img src="https://hosted.weblate.org/widgets/free-tube/-/svg-badge.svg" alt="Translation status" />
-  </a>
+  </a>?
 </p>
 
 <hr>
