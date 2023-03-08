@@ -115,7 +115,7 @@ For the Linux Flatpak, the desktop entry comment string can be translated at our
 If you ever have any questions, feel free to ask it on our [Discussions](https://github.com/FreeTubeApp/FreeTube/discussions) page.  Alternatively, you can email us at FreeTubeApp@protonmail.com or you can join our [Matrix Community](https://matrix.to/#/+freetube:matrix.org).  Don't forget to check out the [rules](https://docs.freetubeapp.io/community/matrix/) before joining.
 
 ## Donate
-If you enjoy using FreeTube, you're welcome to leave a donation using the following methods.  
+If you enjoy using FreeTube, you're welcome to leave a donation using the following methods. another test  
 
 * [FreeTube on Liberapay](https://liberapay.com/FreeTube)
 
