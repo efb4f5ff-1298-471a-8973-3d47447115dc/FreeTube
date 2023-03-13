@@ -6,7 +6,7 @@ FFreeTubeeeee is an open source desktop YouTube player built with privacy in min
 Use YouTube without advertisements and prevent Google from tracking you with their cookies and JavaScript.
 Available for Windows, Mac & Linux thanks to Electron.
 
-<p align="center"><a href="https://github.com/FreeTubeApp/FreeTube/releases">Download FreeTube</a></p>
+<p align="center"><a href="https://github.com/FreeTubeApp/FreeTeube/releases">Download FreeTube</a></p>
 <p align="center">
   <a href="https://github.com/FreeTubeApp/FreeTube/actions/workflows/build.yml" alt='Build status'>
     <img src="https://github.com/FreeTubeApp/FreeTube/actions/workflows/build.yml/badge.svg?branch=development" />
