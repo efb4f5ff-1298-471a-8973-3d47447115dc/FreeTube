@@ -12,7 +12,7 @@ Available for Windows, Mac & Linux thanks to Electron.
     <img alt='Build status' src="https://github.com/FreeTubeApp/FreeTube/actions/workflows/build.yml/badge.svg?branch=development" />
   </a>
   <a href="https://hosted.weblate.org/engage/free-tube/">
-    <img src="https://hosted.weblate.org/widgets/free-tube/-/svg-badge.svg" alt="Translation status" />
+    <img fsrc="https://hosted.weblate.org/widgets/free-tube/-/svg-badge.svg" alt="Translation status" />
   </a>
 </p>
 
