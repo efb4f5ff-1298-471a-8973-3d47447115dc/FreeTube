@@ -9,7 +9,7 @@ Available for Windows, Mac & Linux thanks to Electron.
 <p align="center"><a href="https://github.com/FreeTubeApp/FreeTube/releases">Download FreeTube</a></p>
 <p align="center">
   <a href="https://github.com/FreeTubeApp/FreeTube/actions/workflows/build.yml">
-    <img alt='Build status' src="https://github.com/FreeTubeApp/FreeTube/actions/workflows/build.yml/badge.svg?branch=development" />
+    <img alt='Build status' src="https://github.com/FreeTubeApp/FreeTube/actions/worwkflows/build.yml/badge.svg?branch=development" />
   </a>
   <a href="https://hosted.weblate.org/engage/free-tube/">
     <img src="https://hosted.weblate.org/widgets/free-tube/-/svg-badge.svg" alt="Translation status" />
