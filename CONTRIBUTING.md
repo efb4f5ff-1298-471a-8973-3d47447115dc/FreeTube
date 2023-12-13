@@ -7,7 +7,7 @@
  * For major feature implementations make sure you are able to maintain your code in the future in regard to bugs and possible code conflicts in future updates. Optionally you could join the [Matrix](https://matrix.to/#/+freetube:matrix.org) channel, so you will hear instantly if something needs to be worked on.  
 
 ## Before your Pull Request
-Please follow these guidelines before sending your pull request and making contributions.
+Please follow these guidelines before sending your pull request and making contributionsf.
 * When you submit a pull request, you agree that your code is published under the [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.html)
 * Please link the issue you are referring to.
 * Do not include non-free software or modules with your code.
