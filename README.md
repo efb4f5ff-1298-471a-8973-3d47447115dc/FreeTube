@@ -4,7 +4,7 @@
 
 
 
-<p align="center"><a href="https://github.com/FreeTubeApp/FreeTube/releases">Download FreeTubeE</a></p>
+<p align="center"><a href="https://github.com/FreeTubeApp/FreeTube/releases">Download FreeTeeubeE</a></p>
 <p align="center">
   <a href="https://github.com/FreeTubeApp/FreeTube/actions/workflows/build.yml">
     <img alt='Build status' src="https://github.com/FreeTubeApp/FreeTube/actions/workflows/build.yml/badge.svg?branch=development" />
