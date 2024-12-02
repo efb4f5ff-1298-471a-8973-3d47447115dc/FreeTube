@@ -10,7 +10,7 @@ import FtToast from './components/ft-toast/ft-toast.vue'
 import FtProgressBar from './components/FtProgressBar/FtProgressBar.vue'
 import FtPlaylistAddVideoPrompt from './components/ft-playlist-add-video-prompt/ft-playlist-add-video-prompt.vue'
 import FtCreatePlaylistPrompt from './components/ft-create-playlist-prompt/ft-create-playlist-prompt.vue'
-import FtSearchFilters from './components/FtSearchFilters/FtSearchFilters.vue'
+import FtSearchFilters from './components/ft-search-filters/ft-search-filters.vue'
 import { marked } from 'marked'
 import { IpcChannels } from '../constants'
 import packageDetails from '../../package.json'
@@ -142,6 +142,10 @@ export default defineComponent({
 
     externalLinkHandling: function () {
       return this.$store.getters.getExternalLinkHandling
+    },
+
+    openLinksInNewWindow: function () {
+      return this.$store.getters.getOpenLinksInNewWindow
     }
   },
   watch: {
@@ -512,9 +516,9 @@ export default defineComponent({
     },
 
     enableOpenUrl: function () {
-      ipcRenderer.on(IpcChannels.OPEN_URL, (event, url) => {
+      ipcRenderer.on(IpcChannels.OPEN_URL, (event, url, { isLaunchLink = false } = { }) => {
         if (url) {
-          this.handleYoutubeLink(url)
+          this.handleYoutubeLink(url, { doCreateNewWindow: this.openLinksInNewWindow && !isLaunchLink })
         }
       })
 
