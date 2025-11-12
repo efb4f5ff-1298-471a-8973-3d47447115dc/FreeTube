@@ -859,7 +859,14 @@ export default defineComponent({
 
           this.videoTitle = result.title
           this.videoViewCount = result.viewCount
-          this.channelSubscriptionCountText = isNaN(result.subCountText) ? '' : result.subCountText
+
+          const subCount = parseLocalSubscriberCount(result.subCountText)
+          if (!isNaN(subCount)) {
+            this.channelSubscriptionCountText = formatNumber(subCount, subCount >= 10000 ? { notation: 'compact' } : undefined)
+          } else {
+            this.channelSubscriptionCountText = ''
+          }
+
           if (this.hideVideoLikesAndDislikes) {
             this.videoLikeCount = null
             this.videoDislikeCount = null
@@ -883,6 +890,15 @@ export default defineComponent({
           this.videoPublished = result.published * 1000
           this.videoDescriptionHtml = result.descriptionHtml
           const recommendedVideos = result.recommendedVideos
+
+          // The recommended videos currently use yyyy-mm-ddThh:mm:ss for the published timestamp
+          // whereas the rest of the API uses unix timestamps, correct that here
+          recommendedVideos.forEach((video) => {
+            if (typeof video.published === 'string') {
+              video.published = Date.parse(video.published)
+            }
+          })
+
           // place watched recommended videos last
           this.recommendedVideos = [
             ...recommendedVideos.filter((video) => !this.isRecommendedVideoWatched(video.videoId)),
